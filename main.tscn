@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cu06l3npyln42"]
+
+[ext_resource type="Script" uid="uid://tytulr0u56ha" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Control" type="Control" unique_id=1467708580]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="Label" type="Label" parent="." unique_id=1123732004]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "MT random test
+"
+
+[node name="Button" type="Button" parent="." unique_id=717988400]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -107.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Ten million d20"
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
