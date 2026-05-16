@@ -10,7 +10,7 @@ func _ready() -> void:
 	histogram.resize(20)
 	histogram.fill(0)
 	histogram2.resize(20)
-	histogram2.append(0)
+	histogram2.fill(0)
 
 func generate(rolls :int, sequence : bool = false):
 	var tim = Time.get_ticks_usec()
