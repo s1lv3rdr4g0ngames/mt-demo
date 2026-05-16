@@ -17,11 +17,15 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-MTGD="*uid://b33rbo2bl0t00"
+MTRand="*uid://crqvnniadlvvf"
 
 [dotnet]
 
 project/assembly_name="MTdemo"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/mersenne_twister_godot/plugin.cfg")
 
 [physics]
 
